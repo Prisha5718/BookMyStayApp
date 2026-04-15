@@ -34,6 +34,11 @@ public class RoomInventory {
         inventory.put(roomType, count);
     }
 
+    // Return all room data (IMPORTANT FOR UC4)
+    public Map<String, Integer> getAllRooms() {
+        return inventory;
+    }
+
     // Display all rooms
     public void displayInventory() {
         System.out.println("\nRoom Inventory:");
